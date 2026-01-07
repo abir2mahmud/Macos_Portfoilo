@@ -18,7 +18,7 @@ const Image = () => {
             </div>
 
             <div className="w-full">
-                {imageUrl && <img src={imageUrl} alt={name} />}
+                {imageUrl && <img src={imageUrl} alt={name} className="w-full h-auto object-contain" />}
             </div>
         </>
     );
