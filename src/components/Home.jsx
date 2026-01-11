@@ -1,6 +1,6 @@
-import {locations} from "#constants";
+import { locations } from "#constants";
 import clsx from "clsx";
-import {useGSAP} from "@gsap/react";
+import { useGSAP } from "@gsap/react";
 import { Draggable } from "gsap/Draggable";
 import useWindowStore from "#store/window.js";
 import useLocationStore from "#store/location.js";
@@ -26,8 +26,9 @@ const Home = () => {
                     <img src="/images/folder.png" alt={project.name}/>
                     <p>{project.name}</p>
                 </li>
-            ))}
+            ))};
         </ul>
     </section>
-}
+};
+
 export default Home

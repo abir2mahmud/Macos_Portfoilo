@@ -137,7 +137,7 @@ const socials = [
     {
         id: 2,
         text: "Facebook",
-        icon: "/icons/atom.svg",
+        icon: "/icons/facebook.svg",
         bg: "#056bd3",
         link: "https://facebook.com/abir2mahmud",
     },

@@ -1,6 +1,6 @@
 import WindowWrapper from "#hoc/WindowWrapper.jsx";
-import {socials} from "#constants/index.js";
-import {WindowControls} from "#components";
+import { socials } from "#constants/index.js";
+import { WindowControls } from "#components";
 
 const Contact = () => {
     return <>

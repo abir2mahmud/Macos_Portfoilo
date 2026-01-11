@@ -1,5 +1,5 @@
 import useWindowStore from "#store/window.js";
-import {useLayoutEffect, useRef} from "react";
+import { useLayoutEffect, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';
 import Draggable from "gsap/Draggable";
@@ -36,10 +36,10 @@ const WindowWrapper = (Component, windowKey) => {
             el.style.display = isOpen ? "block" : "none";
         }, [isOpen]);
 
-        return (<section id={windowKey} ref={ref} style={{ zIndex }} className={"absolute"}>
-            <Component {...props} />
-        </section>
-        );
+            return (<section id={windowKey} ref={ref} style={{ zIndex }} className={"absolute"}>
+                <Component {...props} />
+                </section>
+            );
     };
 
     Wrapped.displayName = `WindowWrapper(${Component.displayName || Component.name || "Component"})`;

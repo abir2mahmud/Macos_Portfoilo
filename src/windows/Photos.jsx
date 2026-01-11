@@ -10,15 +10,15 @@ const Photos = () => {
 
     return (
         <>
-          <div id="window-header">
-              <WindowControls target="photos" />
-              <div className= "w-full flex justify-end items-center gap-3 text-gray-500">
-                  <Mail className="icon" />
-                  <Search className="icon" />
-              </div>
-          </div>
+            <div id="window-header">
+                <WindowControls target="photos" />
+                <div className= "w-full flex justify-end items-center gap-3 text-gray-500">
+                    <Mail className="icon" />
+                    <Search className="icon" />
+                </div>
+            </div>
 
-              <div className="flex w-full">
+            <div className="flex w-full">
                 <div className="sidebar">
                     <h2>Photos</h2>
 
@@ -42,7 +42,7 @@ const Photos = () => {
                         )}
                     </ul>
                 </div>
-              </div>
+            </div>
         </>
     );
 };

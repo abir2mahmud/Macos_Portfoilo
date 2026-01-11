@@ -1,25 +1,25 @@
 import WindowWrapper from "#hoc/WindowWrapper.jsx";
 import { techStack } from "#constants/index.js";
-import {Check, Flag} from "lucide-react"
-import {WindowControls} from "#components/index.js";
+import { Check, Flag } from "lucide-react"
+import { WindowControls } from "#components/index.js";
 
 const Terminal = () => {
     return (
         <>
-          <div id="window-header">
-              <WindowControls target="terminal" />
-              <h2>Tech Stack</h2>
-          </div>
+            <div id="window-header">
+                <WindowControls target="terminal" />
+                <h2>Tech Stack</h2>
+            </div>
 
             <div className="techstack">
                 <p>
-                  <span className="font-bold">@abir2mahmud % </span>
-                  show tech stack
+                    <span className="font-bold">@abir2mahmud % </span>
+                    show tech stack
                 </p>
 
                 <div className="label">
-                  <p className="w-32">Category</p>
-                  <p>Technologies</p>
+                    <p className="w-32">Category</p>
+                    <p>Technologies</p>
                 </div>
 
                 <ul className="content">
@@ -47,7 +47,7 @@ const Terminal = () => {
                     </p>
                 </div>
             </div>
-          </>
+        </>
     );
 };
 

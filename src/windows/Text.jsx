@@ -1,5 +1,5 @@
 import WindowWrapper from "#hoc/WindowWrapper.jsx";
-import {WindowControls} from "#components/index.js";
+import { WindowControls } from "#components/index.js";
 import useWindowStore from "#store/window.js";
 
 const Text = () => {
