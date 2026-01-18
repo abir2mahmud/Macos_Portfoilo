@@ -8,7 +8,7 @@ const Terminal = () => {
         <>
             <div id="window-header">
                 <WindowControls target="terminal" />
-                <h2>Tech Stack</h2>
+                <h2>Terminal</h2>
             </div>
 
             <div className="techstack">
@@ -29,7 +29,7 @@ const Terminal = () => {
                             <h3>{category}</h3>
                             <ul>
                                 {items.map((item, i) => (
-                                    <li Key={i}>{item}{i < items.length - 1 ? "," : ""}</li>
+                                    <li key={i}>{item}{i < items.length - 1 ? "," : ""}</li>
                                 ))}
                             </ul>
                         </li>

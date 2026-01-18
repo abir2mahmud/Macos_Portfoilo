@@ -41,7 +41,7 @@ const Safari = () => {
 
             <div className="space-y-8">
                 {blogPosts.map(({ id, image, title, date, link }) => (
-                    <div Key={id} className="blog-post">
+                    <div key={id} className="blog-post">
                         <div className="col-span-2">
                         <img src={image} alt={title} />
                     </div>
