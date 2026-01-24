@@ -77,15 +77,11 @@ const Welcome = () => {
         <p ref={subtitleRef}>
             {renderText(
              "Hey there, Welcome to macOS Style Portfolio of",
-                "text-3xl font-georama", 100,
+                "text-3xl font-georama max-sm:text-lg", 100,
             )}</p>
         <h1 ref={titleRef} className="mt-7">
-            {renderText("Abir Mahmud", "text-9xl italic font-georama")}
+            {renderText("Abir Mahmud", "text-9xl italic font-georama max-sm:text-5xl")}
         </h1>
-
-        <div className="small-screen">
-            <p>This Portfolio is designed for desktop/tablet screens only</p>
-        </div>
     </section>
 };
 
