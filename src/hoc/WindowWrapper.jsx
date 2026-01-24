@@ -6,7 +6,7 @@ import Draggable from "gsap/Draggable";
 
 const WindowWrapper = (Component, windowKey) => {
     const Wrapped = (props) => {
-        const { focusedWindow, windows } = useWindowStore();
+        const { focusWindow, windows } = useWindowStore();
         const { isOpen, zIndex } = windows[windowKey];
         const ref = useRef(null);
 
@@ -24,8 +24,10 @@ const WindowWrapper = (Component, windowKey) => {
             const el = ref.current;
             if (!el) return;
 
+            if (window.innerWidth < 640) return;
+
             const [instance] = Draggable.create(el, { onPress: () =>
-                    (windowKey) });
+                    focusWindow(windowKey) });
 
             return () => instance.kill();
         }, []);

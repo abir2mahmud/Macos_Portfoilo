@@ -26,10 +26,10 @@ const Finder = () => {
             <ul>
                 {items.map((item) => (
             <li key={item.id} onClick={() => setActiveLocation(item)} className={clsx(item.id === activeLocation.id ? "active" : "not-active")}>
-                <img src={item.icon} className="w-4" alt={item.name} />
-                <p className="text-sm font-medium truncate">{item.name}</p>
+                <img src={item.icon} className="w-4 max-sm:w-3" alt={item.name} />
+                <p className="text-sm font-medium truncate max-sm:text-[10px]">{item.name}</p>
             </li>
-                ))};
+                ))}
             </ul>
         </div>
     );
